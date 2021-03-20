@@ -1,0 +1,20 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}?{% now " U" %}" />
+  <script src="{% static 'js/quiz.js' %}?{% now " U" %}"></script>
+  <title></title>
+</head>
+
+<body>
+  <div class="quiz">
+    {% include 'navbar.html' %}
+    {% block content %}
+    {% endblock %}
+  </div>
+</body>
+
+</html>
